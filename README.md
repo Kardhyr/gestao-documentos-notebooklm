@@ -3,82 +3,88 @@
 
 ## Contexto e Objetivos
 
-A gestão de documentos é um pilar da administração pública brasileira, regulada principalmente pela **Lei nº 8.159/1991** (Lei de Arquivos). Ela garante eficiência, transparência, preservação da memória institucional e o direito à informação.
+A gestão de documentos é um pilar essencial da administração pública brasileira, regulada principalmente pela **Lei nº 8.159/1991** (Lei de Arquivos). Ela garante eficiência operacional, transparência, preservação da memória institucional e o direito de acesso à informação.
 
-**Objetivos do caderno**:
-- Entender os conceitos básicos e o ciclo de vida dos documentos.
-- Conhecer as principais normas e instrumentos (CPAD, tabela de temporalidade, e-ARQ Brasil).
-- Identificar boas práticas para produção, tramitação e destinação de documentos (em papel e digitais).
+**Objetivos deste caderno**:
+- Compreender os conceitos fundamentais e o ciclo de vida dos documentos.
+- Conhecer as principais normas e instrumentos (CPAD, Tabela de Temporalidade, e-ARQ Brasil).
+- Identificar boas práticas para produção, tramitação, avaliação e destinação de documentos (em papel e digitais).
 - Criar um material prático e reutilizável para estudos ou aplicação no serviço público.
 
-## Curadoria de Fontes (4 fontes oficiais)
+## Curadoria de Fontes
 
-Todas as fontes são abertas e oficiais do Governo Federal:
+Utilizei **4 fontes oficiais e abertas** do Governo Federal, carregadas diretamente no NotebookLM:
 
 1. **Lei nº 8.159, de 8 de janeiro de 1991** (Lei de Arquivos)  
-   Link: https://www.planalto.gov.br/ccivil_03/leis/l8159.htm
+   [Link](https://www.planalto.gov.br/ccivil_03/leis/l8159.htm)
 
-2. **Gestão de Documentos: Curso de capacitação para os integrantes do Sistema de Gestão de Documentos de Arquivo – SIGA, da administração pública federal
-   Link: https://www.gov.br/arquivonacional/pt-br/servicos/gestao-de-documentos/orientacao-tecnica-1/publicacoes-tecnicas-de-referencia/gestao_de_documentos.pdf
- 
-3. **Guia de Gestão de Documentos para os Órgãos e Entidades do Poder Executivo Federal** (Arquivo Nacional, 2025)  
-   Link: https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/Guiadegestaodedocumentos.pdf
+2. **Gestão de Documentos: Curso de capacitação para o SIGA**  
+   [Link PDF](https://www.gov.br/arquivonacional/pt-br/servicos/gestao-de-documentos/orientacao-tecnica-1/publicacoes-tecnicas-de-referencia/gestao_de_documentos.pdf)
 
-4. **e-ARQ Brasil – Modelo de Requisitos para Sistemas Informatizados de Gestão Arquivística de Documentos (Versão 2, 2022)**  
-   Link: https://www.gov.br/conarq/pt-br/centrais-de-conteudo/publicacoes/EARQV203MAI2022.pdf
+3. **Guia de Gestão de Documentos para o Poder Executivo Federal (2025)**  
+   [Link PDF](https://www.gov.br/arquivonacional/pt-br/servicos/publicacoes/Guiadegestaodedocumentos.pdf)
 
-*(3 fontes foram carregadas diretamente no NotebookLM via URL, enquanto a lei foi copiada e colada)*
+4. **e-ARQ Brasil – Modelo de Requisitos para Sistemas Informatizados (Versão 2, 2022)**  
+   [Link PDF](https://www.gov.br/conarq/pt-br/centrais-de-conteudo/publicacoes/EARQV203MAI2022.pdf)
 
-## Engenharia de Prompts e Cicatrizes (meu processo)
+## Engenharia de Prompts e Cicatrizes
 
-Testei vários prompts para extrair o melhor do NotebookLM. Aqui os principais:
+Testei diferentes prompts para obter respostas precisas e fiéis às fontes.
 
-**Prompt 1 (base)**:  
-“Usando apenas as fontes carregadas, explique o conceito de gestão de documentos segundo a Lei 8.159/1991 e liste as três fases do ciclo de vida dos documentos.”
+**Prompts utilizados:**
 
-**Prompt 2 (resumo prático)**:  
-“Crie um resumo estruturado das principais etapas de um Programa de Gestão de Documentos, destacando o papel da CPAD.”
+1. **Prompt base**:  
+   “Usando apenas as fontes carregadas, explique o conceito de gestão de documentos segundo a Lei 8.159/1991 e liste as três fases do ciclo de vida dos documentos com suas características principais.”
 
-**Prompt 3 (glossário)**:  
-“Extraia e organize em formato de glossário os 10 conceitos mais importantes: documento de arquivo, fase corrente, tabela de temporalidade, CPAD, e-ARQ Brasil etc.”
+   **Resposta obtida (exemplo)**:
+Segundo a **Lei 8.159/1991** (Lei de Arquivos), em seu artigo 3º, a **gestão de documentos** é definida como o conjunto de procedimentos e operações técnicas referentes à sua **produção, tramitação, uso, avaliação e arquivamento** em fase corrente e intermediária, visando a sua **eliminação ou recolhimento para guarda permanente**,,,.
 
-**Dificuldades encontradas (cicatrizes)**:  
-- No início o NotebookLM dava respostas muito genéricas → resolvi adicionando sempre “usando apenas as fontes carregadas”.  
-- O Guia de 2025 trouxe atualizações importantes sobre documentos digitais que não estavam na lei antiga.  
-- Precisei refinar os prompts para o modelo não misturar conceitos de papel e digital.
+O **ciclo de vida dos documentos** (ou ciclo vital) refere-se às sucessivas fases pelas quais os documentos passam, desde a sua produção até a sua destinação final,. As três fases e suas características principais são:
 
-EX:
+1.  **Produção**: Corresponde à elaboração, recebimento e retenção de documentos em razão da execução das atividades de um órgão ou entidade,. Esta fase tem como característica a busca pela **otimização da criação documental**, visando evitar a proliferação de documentos não essenciais, controlar o volume a ser manuseado e garantir o uso adequado de recursos tecnológicos, como formulários padronizados e modelos de redação,,.
+2.  **Utilização**: Refere-se ao **fluxo percorrido pelos documentos** (tramitação) para o cumprimento de suas funções administrativas, bem como à sua guarda e conservação após cessar o trâmite imediato,. Suas características incluem o controle das atividades de **protocolo**, a aplicação de técnicas de **classificação** e organização, a gestão de arquivos nas fases corrente e intermediária e a implantação de sistemas que facilitem a recuperação da informação,.
+3.  **Destinação**: É a fase em que se decide, após um processo de **avaliação**, quais documentos possuem valor histórico, probatório ou informativo e devem ser preservados definitivamente (**guarda permanente**) e quais não possuem mais utilidade e podem ser **eliminados**,,. Caracteriza-se pelas atividades de análise, seleção e **fixação de prazos de guarda**, garantindo que nenhum documento seja conservado por tempo superior ao necessário para as finalidades administrativas, legais ou fiscais,,.
 
-<img width="792" height="816" alt="image" src="https://github.com/user-attachments/assets/940d43b6-ca04-4d32-a70d-cfe0afd1e413" />
+2. **Prompt para glossário**:  
+   “Extraia e organize em formato de glossário os 10 conceitos mais importantes das fontes.”
 
+3. **Prompt para comparação**:  
+   “Compare a gestão de documentos em papel versus documentos digitais segundo o e-ARQ Brasil.”
 
-P: **Usando apenas as fontes carregadas, explique o conceito de gestão de documentos segundo a Lei 8.159/1991 e liste as três fases do ciclo de vida dos documentos com suas características principais.**
+**Dificuldades encontradas e como resolvi**:
+- Respostas muito genéricas → Solução: sempre incluir “usando apenas as fontes carregadas”.
+- Confusão entre papel e digital → Solução: prompts mais específicos separando os contextos.
+- O Guia de 2025 trouxe atualizações importantes sobre sistemas digitais que complementam a lei de 1991.
 
-R: Segundo a **Lei 8.159/1991 (Lei de Arquivos)**, em seu artigo 3º, a **gestão de documentos** é definida como o **conjunto de procedimentos e operações técnicas** referentes à sua **produção, tramitação, uso, avaliação e arquivamento** em fase corrente e intermediária,,. O objetivo central dessas atividades é visar a **eliminação** dos documentos ou o seu **recolhimento para guarda permanente**,,.
+<img width="1167" height="1362" alt="image" src="https://github.com/user-attachments/assets/f4fbd1ba-09ab-4e1b-bda9-edcad369ba8b" />
 
-O **ciclo de vida dos documentos** refere-se às sucessivas fases pelas quais os documentos passam, desde a sua produção até a sua destinação final,,. As três fases e suas principais características são:
+<img width="795" height="1020" alt="image" src="https://github.com/user-attachments/assets/60b6fc70-0274-43cb-bc67-a12525f5f7bd" />
 
-1.  **Produção**: Esta fase corresponde à **elaboração e recebimento** de documentos em razão da execução das atividades de um órgão ou entidade,,. Suas características principais incluem o **controle e a otimização da criação documental**, visando evitar a proliferação de documentos não essenciais e garantir o uso adequado de recursos tecnológicos e modelos padronizados,,.
-2.  **Utilização**: Refere-se ao **fluxo percorrido pelos documentos** (tramitação) para o cumprimento de suas funções administrativas, bem como à sua **guarda e conservação** após cessar o trâmite imediato,,. Esta fase envolve atividades de **protocolo**, técnicas de **classificação**, organização e a gestão de arquivos nas fases corrente e intermediária para facilitar a recuperação da informação,.
-3.  **Destinação**: É a fase em que se decide, após um processo de **avaliação**, quais documentos possuem valor histórico ou probatório e devem ser preservados definitivamente (**guarda permanente**) e quais não possuem mais utilidade administrativa, legal ou fiscal e podem ser **eliminados**,,. Suas características principais são a análise, a seleção e a **fixação de prazos de guarda**, garantindo que nenhum documento seja preservado por tempo superior ao necessário, a menos que tenha valor secundário para pesquisa ou como testemunho do passado,,.
+<img width="362" height="503" alt="image" src="https://github.com/user-attachments/assets/e3546ac3-a9fa-4c0c-b56e-67a521401fb8" />
 
-## Miniguia de Estudo (Entrega Final)
+## Miniguia de Estudo
 
-### Resumos estruturados
-- **Definição**: Gestão de documentos = conjunto de procedimentos técnicos para produção, tramitação, uso, avaliação e arquivamento (Lei 8.159/91, Art. 3º).  
-- **Ciclo de vida**: Fase corrente → Fase intermediária → Fase permanente.  
-- **Instrumentos principais**: Código de Classificação, Tabela de Temporalidade, CPAD e e-ARQ Brasil (para sistemas digitais).
+### Resumos Estruturados
+- **Definição**: Conjunto de procedimentos técnicos para produção, tramitação, uso, avaliação e arquivamento de documentos (Lei 8.159/91).
+- **Ciclo de vida dos documentos**: Fase corrente → Fase intermediária → Fase permanente.
+- **Instrumentos principais**: Código de Classificação, Tabela de Temporalidade, **CPAD** (Comissão Permanente de Avaliação de Documentos) e **e-ARQ Brasil** (para documentos digitais).
 
 ### Glossário
-- **Documento de arquivo**: Documento produzido ou recebido no exercício de atividades específicas.  
-- **CPAD**: Comissão Permanente de Avaliação de Documentos – responsável pela avaliação e destinação.  
-- **Tabela de Temporalidade**: Define prazos de guarda e destinação final.  
-- **e-ARQ Brasil**: Modelo de requisitos para sistemas informatizados de gestão arquivística.
+- **Documento de arquivo**: Documento produzido ou recebido no exercício de atividades específicas.
+- **CPAD**: Comissão responsável pela avaliação e destinação dos documentos.
+- **Tabela de Temporalidade**: Define prazos de guarda e destinação final (eliminação ou guarda permanente).
+- **e-ARQ Brasil**: Modelo de requisitos para sistemas informatizados de gestão arquivística de documentos.
 
-### Prompts reutilizáveis (copie e use no seu NotebookLM)
-1. “Resuma o papel da CPAD nas fontes carregadas.”  
-2. “Compare gestão de documentos em papel x digitais segundo o e-ARQ Brasil.”  
-3. “Crie um fluxograma textual das etapas de avaliação de documentos.”  
-4. “Liste boas práticas para [tema específico] segundo o Guia 2025.”
+### Prompts Reutilizáveis
+1. “Resuma o papel da CPAD nas fontes carregadas.”
+2. “Compare gestão de documentos em papel x digitais segundo o e-ARQ Brasil.”
+3. “Crie um fluxograma textual das etapas de avaliação de documentos.”
+4. “Liste boas práticas para [insira o tema] segundo o Guia 2025.”
 
-**Notebook criado com NotebookLM + fontes oficiais do Arquivo Nacional.**
+## Conclusão
+
+Este caderno temático foi desenvolvido como entrega do desafio da DIO utilizando o **NotebookLM** como ferramenta de aprendizagem ativa. O objetivo foi demonstrar curadoria de fontes oficiais, engenharia de prompts e organização do conhecimento sobre um tema relevante para o serviço público brasileiro.
+
+**Link do repositório**: https://github.com/Kardhyr/gestao-documentos-notebooklm
+
+**Link do Notebook**: https://notebooklm.google.com/notebook/8609c03a-dbee-409f-be8f-fd50fa9599dc
